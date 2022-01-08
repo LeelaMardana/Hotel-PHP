@@ -3,17 +3,47 @@ $default: #8d8d8d;
 $title: #29282d;
 $bg: #f6f6f6;
 
-%roboto-400{
-  font-family: 'Roboto-Regular', sans-serif;
+%roboto-400 {
+  font-family: "Roboto-Regular", sans-serif;
   font-weight: 400;
 }
 
-%roboto-500{
-  font-family: 'Roboto-Medium', sans-serif;
+%roboto-500 {
+  font-family: "Roboto-Medium", sans-serif;
   font-weight: 500;
 }
 
-%roboto-700{
-  font-family: 'Roboto-Bold', sans-serif;
+%roboto-700 {
+  font-family: "Roboto-Bold", sans-serif;
   font-weight: 700;
+}
+
+%m400 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+}
+
+%m600 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+}
+
+%m700 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+}
+
+%n400 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+%n700 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+%n800 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
 }

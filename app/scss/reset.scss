@@ -1,10 +1,10 @@
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
 }
 
@@ -21,8 +21,8 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -48,7 +48,18 @@ select {
   font: inherit;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
+}
+
+input,
+button,
+textarea {
+  border: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
 }
