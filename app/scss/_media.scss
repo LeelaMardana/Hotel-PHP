@@ -27,11 +27,6 @@
       padding: 30px 0;
     }
   }
-  .header-menu {
-    &__inner {
-      height: 60px;
-    }
-  }
   .search {
     &__input {
       max-width: 340px;
@@ -42,5 +37,34 @@
     &__img {
       width: 132px;
     }
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding: 0 20px;
+  }
+  .navbar {
+    &__search,
+    &__user,
+    &__menu {
+      display: none;
+    }
+    &__btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 11px;
+      background-color: inherit;
+      span {
+        background-color: #333333;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }

@@ -81,6 +81,16 @@ body {
     width: 177px;
   }
 }
+
+.navbar {
+  &__btn {
+    display: none;
+    span {
+      width: 16px;
+      height: 1px;
+    }
+  }
+}
 .header-menu {
   background-color: #0a223d;
   &__inner {
