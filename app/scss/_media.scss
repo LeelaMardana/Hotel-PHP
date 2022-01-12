@@ -67,4 +67,35 @@
   .logo {
     width: 99px;
   }
+  .hotel {
+    &-info {
+      display: block;
+    }
+    &-info__rating {
+      display: none;
+    }
+    &-info__about-offer {
+      order: -1;
+    }
+    &-info__about-title {
+      flex-basis: 100%;
+      margin-right: 0;
+      margin-top: 10px;
+    }
+    &-info__about-stars {
+      flex-basis: content;
+      margin-bottom: 0;
+    }
+    &-info__about-box {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .hotel {
+    &-info__about {
+      max-width: 269px;
+    }
+  }
 }
