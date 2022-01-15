@@ -226,7 +226,32 @@
   gap: 2px;
 }
 
-.hotel-box {
-  display: none;
+.swiper {
+  width: 728px;
+  height: 450px;
+  border-radius: 8px;
+  position: relative;
 }
+.slider {
+  &-button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 17px;
+    z-index: 99;
+    margin: 0 auto;
+
+    &--next {
+      right: 17px;
+      left: auto;
+    }
+    img {
+      margin: auto;
+    }
+  }
+}
+
 @import "media";

@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -51,9 +55,9 @@
           </div>
         </div>
       </div>
-      <ul class="header-menu navbar__menu">
+      <div class="header-menu navbar__menu">
         <div class="container">
-          <div class="header-menu__inner">
+          <ul class="header-menu__inner">
             <li class="header-menu__item">
               <a class="header-menu__link" href="#">All Deals</a>
             </li>
@@ -75,9 +79,9 @@
             <li class="header-menu__item">
               <a class="header-menu__link" href="#">Rodrigues</a>
             </li>
-          </div>
+          </ul>
         </div>
-      </ul>
+      </div>
     </div>
     <nav class="breadcrumb">
       <div class="container">
@@ -147,9 +151,31 @@
               </span>
             </div>
           </div>
-          <div class="hotel-box">
+          <div class="hotel-grid">
             <div class="hotel-slider">
-              <img src="images/slide-1.jpg" alt="slide img" />
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="images/slide-1.jpg" alt="slide" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/slide-2.jpg" alt="slide" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/slide-3.jpg" alt="slide" />
+                  </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <button class="slider-button slider-button--prev">
+                  <img src="images/left.svg" alt="" />
+                </button>
+                <button class="slider-button slider-button--next">
+                  <img src="images/right.svg" alt="" />
+                </button>
+              </div>
             </div>
             <div class="hotel-book">
               <div class="hotel-book__about">
@@ -176,6 +202,7 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
