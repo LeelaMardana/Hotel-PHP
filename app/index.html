@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -159,13 +159,25 @@
                 <div class="swiper-wrapper">
                   <!-- Slides -->
                   <div class="swiper-slide">
-                    <img src="images/slide-1.jpg" alt="slide" />
+                    <img
+                      class="swiper-slide__img"
+                      src="images/slide-1.jpg"
+                      alt="slide"
+                    />
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/slide-2.jpg" alt="slide" />
+                    <img
+                      class="swiper-slide__img"
+                      src="images/slide-2.jpg"
+                      alt="slide"
+                    />
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/slide-3.jpg" alt="slide" />
+                    <img
+                      class="swiper-slide__img"
+                      src="images/slide-3.jpg"
+                      alt="slide"
+                    />
                   </div>
                 </div>
                 <!-- If we need navigation buttons -->
@@ -177,29 +189,77 @@
                 </button>
               </div>
             </div>
-            <div class="hotel-book">
-              <div class="hotel-book__about">
-                <div class="hotel-book__about-box">
+            <div class="hotel-box">
+              <div class="hotel-book">
+                <div class="hotel-book__box">
                   <div class="hotel-book__left">
                     <span class="hotel-book__price">price starts as</span>
-                    <span class="hotel-book__price-num">$ 8,500</span>
+                    <strong class="hotel-book__price-num">$ 8,500</strong>
                     <span class="hotel-book__per">per room / night</span>
                   </div>
                   <div class="hotel-book__right">
-                    <span class="hotel-book__guests">2 x Guests</span>
-                    <span class="hotel-book__rooms">1 x Room</span>
+                    <div class="hotel-book__wrapper hotel-book__guests-wrapper">
+                      <img
+                        class="hotel-book__icon"
+                        src="images/user.svg"
+                        alt="user icon"
+                      />
+                      <span class="hotel-book__guests">2 x Guests</span>
+                    </div>
+                    <div class="hotel-book__wrapper">
+                      <img
+                        class="hotel-book__icon"
+                        src="images/home.svg"
+                        alt="home icon"
+                      />
+                      <span class="hotel-book__rooms">1 x Room</span>
+                    </div>
                   </div>
                   <a href="tel:12100" class="hotel-book__bottom">
                     <span class="hotel-book__booking">Quick Booking</span>
-                    <span class="hotel-book__phone">12100</span>
+                    <div class="hotel-book__wrapper hotel-book__phone-wrapper">
+                      <img
+                        class="hotel-book__icon"
+                        src="images/phone-call.svg"
+                        alt="phone-call icon"
+                      />
+                      <span class="hotel-book__phone">12100</span>
+                    </div>
                   </a>
                 </div>
                 <a class="hotel-book__btn" href="#">View Other Options</a>
               </div>
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.3319202120597!2d4.891636315615486!3d52.40066035281931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6083a26e14b61%3A0x2ea1ad2918cc0722!2sDoubleTree%20by%20Hilton%20Amsterdam%20-%20NDSM%20Wharf!5e0!3m2!1sru!2skg!4v1642302930421!5m2!1sru!2skg"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
-            <div class="hotel-map"></div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="newsletter-container">
+        <h2 class="newsletter-title">
+          subscribe to our
+          <span class="newsletter-title__strong">Newsletter</span>
+        </h2>
+        <form class="newsletter-form">
+          <input
+            class="newsletter-form__input"
+            type="text"
+            placeholder="Your email address"
+          />
+          <button class="newsletter-form__btn" type="submit">
+            <span class="newsletter-form__btn-text">Send</span>
+          </button>
+        </form>
       </div>
     </section>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

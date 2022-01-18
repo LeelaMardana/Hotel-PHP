@@ -2,11 +2,21 @@
   .container {
     max-width: 960px;
   }
+  .hotel {
+    &-slider {
+      max-width: 590px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
+  }
+  .newsletter {
+    &-container {
+      max-width: 700px;
+    }
   }
   .header {
     &__search {
@@ -18,6 +28,24 @@
       font-size: 12px;
       line-height: 15px;
     }
+  }
+  .hotel {
+    &-grid {
+      flex-direction: column;
+      gap: 30px;
+    }
+    &-slider {
+      max-width: 100%;
+    }
+    &-box {
+      flex-direction: row;
+    }
+    &-book {
+      max-width: 340px;
+    }
+  }
+  .map {
+    width: 340px;
   }
 }
 
@@ -32,7 +60,6 @@
       max-width: 340px;
     }
   }
-
   .logo {
     &__img {
       width: 132px;
@@ -43,6 +70,22 @@
 @media (max-width: 750px) {
   .container {
     padding: 0 20px;
+  }
+  .newsletter {
+    height: 320px;
+    &-container {
+      padding-left: 20px;
+      padding-right: 20px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 37px;
+    }
+    &-form {
+      width: 100%;
+    }
+    &-title {
+      align-self: start;
+    }
   }
   .navbar {
     &__search,
@@ -60,6 +103,22 @@
         background-color: #333333;
       }
     }
+  }
+  .hotel {
+    &-grid {
+      gap: 20px;
+    }
+    &-box {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-book {
+      max-width: 100%;
+    }
+  }
+
+  .map {
+    width: 100%;
   }
 }
 
@@ -90,12 +149,34 @@
       justify-content: space-between;
     }
   }
+  .swiper {
+    height: 300px;
+    &-slide__img {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 370px) {
   .hotel {
     &-info__about {
       max-width: 269px;
+    }
+  }
+  .swiper {
+    height: 179px;
+  }
+  .map {
+    height: 172px;
+  }
+  .newsletter {
+    &-title {
+      font-size: 20px;
+      line-height: 25px;
+      &__strong {
+        font-size: 30px;
+        line-height: 38px;
+      }
     }
   }
 }
