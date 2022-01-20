@@ -7,6 +7,15 @@
       max-width: 590px;
     }
   }
+  .activities {
+    &-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &-content__item {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -62,6 +71,15 @@
     }
     &-slider__btns {
       padding: 0;
+    }
+  }
+  .activities {
+    padding: 60px 0 70px;
+    &-content__item {
+      height: 255px;
+    }
+    &-content {
+      gap: 20px;
     }
   }
 }
@@ -138,7 +156,6 @@
       max-width: 100%;
     }
   }
-
   .map {
     width: 100%;
   }
@@ -182,6 +199,18 @@
   }
   .swiper-slide__img {
     width: 100%;
+  }
+  .activities {
+    padding: 40px 0 60px;
+    &-title {
+      margin-bottom: 36px;
+    }
+    &-content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-content__img {
+      width: 100%;
+    }
   }
 }
 
