@@ -47,6 +47,23 @@
   .map {
     width: 340px;
   }
+  .reviews {
+    padding: 40px 0 60px;
+    &-title {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 50px;
+    }
+    &-slider {
+      max-width: 580px;
+    }
+    &-slider__text {
+      max-width: 455px;
+    }
+    &-slider__btns {
+      padding: 0;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -85,6 +102,11 @@
     }
     &-title {
       align-self: start;
+    }
+  }
+  .reviews {
+    &-slider__btns {
+      top: 30px;
     }
   }
   .navbar {
@@ -149,11 +171,17 @@
       justify-content: space-between;
     }
   }
-  .swiper {
-    height: 300px;
-    &-slide__img {
-      width: 100%;
+  .reviews {
+    padding: 40px 0 50px;
+    &-slider__text {
+      padding: 0 30px;
     }
+  }
+  .hotel-swiper {
+    height: 300px;
+  }
+  .swiper-slide__img {
+    width: 100%;
   }
 }
 
@@ -163,7 +191,7 @@
       max-width: 269px;
     }
   }
-  .swiper {
+  .hotel-swiper {
     height: 179px;
   }
   .map {
@@ -177,6 +205,12 @@
         font-size: 30px;
         line-height: 38px;
       }
+    }
+  }
+  .reviews {
+    &-title {
+      font-size: 18px;
+      line-height: 23px;
     }
   }
 }

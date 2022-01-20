@@ -1,10 +1,19 @@
-const swiper = new Swiper('.swiper', {
+const hotelSlider = new Swiper(".hotel-swiper", {
   // Optional parameters
   loop: true,
-  effect: 'fade',
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: ".slider-button--next",
+    prevEl: ".slider-button--prev",
+  },
+});
+
+const rewiewsSlider = new Swiper(".reviews-swiper", {
+  // Optional parameters
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
 });
