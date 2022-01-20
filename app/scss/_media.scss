@@ -110,12 +110,12 @@
     }
   }
   .navbar {
-    &__search,
-    &__user,
-    &__menu {
+    &-top__search,
+    &-top__user,
+    &-menu {
       display: none;
     }
-    &__btn {
+    &-top__btn {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
