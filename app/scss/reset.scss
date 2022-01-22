@@ -60,6 +60,10 @@ textarea {
   padding: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 button {
   color: inherit;
   cursor: pointer;
