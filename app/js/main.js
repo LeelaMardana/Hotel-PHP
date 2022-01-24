@@ -17,3 +17,11 @@ const rewiewsSlider = new Swiper(".reviews-swiper", {
     prevEl: ".reviews-btn--prev",
   },
 });
+
+var menuButton = document.querySelector(".navbar-top__btn");
+menuButton.addEventListener("click", function () {
+  console.log("Клик по кнопке меню");
+  document
+    .querySelector(".navbar-menu")
+    .classList.toggle("navbar-menu--active");
+});

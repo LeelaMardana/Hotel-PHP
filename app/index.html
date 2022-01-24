@@ -29,7 +29,10 @@
                 alt="logo: Best Tour Plan"
               />
             </a>
-            <form class="search header__search navbar-top__search" action="#">
+            <form
+              class="search header__search navbar-top__search--mobile_hidden"
+              action="#"
+            >
               <input
                 class="search__input"
                 type="text"
@@ -39,7 +42,7 @@
                 <img src="images/search.svg" alt="Icon: search" />
               </button>
             </form>
-            <a href="#" class="user navbar-top__user">
+            <a href="#" class="user navbar-top__user--mobile_hidden">
               <img
                 class="user__avatar"
                 src="images/avatar.jfif"
@@ -58,6 +61,28 @@
       <div class="header-menu navbar-menu">
         <div class="container">
           <ul class="header-menu__inner">
+            <li class="header-menu__item header-menu__item--mobile_visible">
+              <a href="#" class="user navbar-top__user">
+                <img
+                  class="user__avatar"
+                  src="images/avatar.jfif"
+                  alt="avatar: Nathan"
+                />
+                <span class="user__name">Nathan</span>
+              </a>
+            </li>
+            <li class="header-menu__item header-menu__item--mobile_visible">
+              <form class="search header__search navbar-top__search" action="#">
+                <input
+                  class="search__input"
+                  type="text"
+                  placeholder="Search Location"
+                />
+                <button class="search__btn">
+                  <img src="images/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="header-menu__item">
               <a class="header-menu__link" href="#">All Deals</a>
             </li>

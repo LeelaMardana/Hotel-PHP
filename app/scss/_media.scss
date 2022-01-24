@@ -172,6 +172,27 @@
   .container {
     padding: 0 20px;
   }
+  .header {
+    &-menu__inner {
+      flex-direction: column;
+      gap: 20px;
+      height: auto;
+      padding-top: 30px;
+    }
+    &-menu__item {
+      &--mobile_visible {
+        display: block;
+      }
+    }
+    &__search {
+      margin-bottom: 20px;
+    }
+  }
+  .user {
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 7px;
+  }
   .newsletter {
     height: 320px;
     &-container {
@@ -194,11 +215,33 @@
     }
   }
   .navbar {
+    &-top {
+      position: fixed;
+      right: 0;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      z-index: 100;
+    }
     &-top__search,
-    &-top__user,
+    &-top__user {
+      &--mobile_hidden {
+        display: none;
+      }
+    }
     &-menu {
       display: none;
+      &--active {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+      }
     }
+
     &-top__btn {
       display: flex;
       flex-direction: column;
@@ -209,6 +252,9 @@
         background-color: #333333;
       }
     }
+  }
+  body {
+    padding-top: 70px;
   }
   .hotel {
     &-grid {
@@ -274,6 +320,11 @@
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .header {
+    &__search {
+      width: 245px;
+    }
   }
   .hotel {
     &-info {
