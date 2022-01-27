@@ -505,7 +505,7 @@ body {
 
 .hotel-book__btn {
   background-color: #ec1f46;
-  max-width: 100%;
+  width: 100%;
   font-size: 14px;
   line-height: 19px;
   padding: 13px;
@@ -1297,20 +1297,53 @@ body {
   height: 22px;
 }
 
-.modal {
-  background: #0a223d;
-  border-radius: 8px;
-  width: 487px;
-  height: 487px;
-  margin: 100px auto;
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
-  padding: 18px;
+  color: #fff;
+  position: fixed;
+  padding: 33px 87px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #0a223d;
+  border-radius: 8px;
+  z-index: 101;
+  width: 487px;
+  min-height: 487px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close-img {
-  margin-left: auto;
+  position: absolute;
+  right: 18px;
+  top: 17px;
 }
 
 .modal__title {
@@ -1331,18 +1364,20 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 15px;
-  max-width: 302px;
   margin: 0 auto;
 }
 
 .modal__input {
   height: 50px;
   padding: 0 18px;
+  border-radius: 4px;
+  width: 100%;
 }
 
 .modal__textarea {
   height: 123px;
   padding: 23px 18px;
+  border-radius: 4px;
 }
 
 .modal__wrapper {
@@ -1371,6 +1406,22 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #e0e0e0;
+}
+
+.error::-webkit-input-placeholder {
+  color: red;
+}
+
+.error:-ms-input-placeholder {
+  color: red;
+}
+
+.error::-ms-input-placeholder {
+  color: red;
+}
+
+.error::placeholder {
+  color: red;
 }
 
 @media (max-width: 1200px) {
@@ -1751,6 +1802,13 @@ body {
   }
   .activities-content__img {
     width: 100%;
+  }
+  .modal__dialog {
+    padding: 33px 15px;
+    width: calc(100% - 40px);
+  }
+  .modal__btn {
+    padding: 18px 50px;
   }
 }
 

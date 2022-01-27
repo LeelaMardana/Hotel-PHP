@@ -38,7 +38,7 @@
                 type="text"
                 placeholder="Search Location"
               />
-              <button class="search__btn">
+              <button class="search__btn" type="submit">
                 <img src="images/search.svg" alt="Icon: search" />
               </button>
             </form>
@@ -251,7 +251,9 @@
                     </div>
                   </a>
                 </div>
-                <a class="hotel-book__btn" href="#">View Other Options</a>
+                <button class="hotel-book__btn" data-toggle="modal">
+                  View Other Options
+                </button>
               </div>
               <div class="map">
                 <iframe
@@ -1011,12 +1013,14 @@
                   type="text"
                   placeholder="Your Full Name*"
                   name="name"
+                  required
                 />
                 <input
                   class="footer-form__input"
                   type="tel"
                   placeholder="Phone Number*"
                   name="phone"
+                  required
                 />
                 <textarea
                   class="footer-form__textarea"
@@ -1060,23 +1064,52 @@
           />
         </a>
         <h3 class="modal__title">Booking</h3>
-        <form class="modal__form">
-          <input
-            class="modal__input"
-            type="text"
-            placeholder="Your Full Name*"
-          />
-          <input class="modal__input" type="tel" placeholder="Phone Number*" />
-          <input class="modal__input" type="text" placeholder="Email*" />
-          <textarea class="modal__textarea" placeholder="Message"></textarea>
+        <form class="modal__form form" action="send.php" method="post">
+          <div class="input-wrapper">
+            <input
+              class="modal__input"
+              type="text"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="3"
+            />
+          </div>
+          <div class="input-wrapper">
+            <input
+              class="modal__input"
+              type="tel"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+              minlength="5"
+            />
+          </div>
+          <div class="input-wrapper">
+            <input
+              class="modal__input"
+              type="text"
+              placeholder="Email*"
+              name="email"
+              required
+              email="email"
+            />
+          </div>
+          <textarea
+            class="modal__textarea"
+            placeholder="Message"
+            name="message"
+          ></textarea>
           <div class="modal__wrapper">
-            <button class="modal__btn">Send</button>
+            <button class="modal__btn" type="submit">Send</button>
             <span class="modal__note">* Required Fields</span>
           </div>
         </form>
       </div>
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

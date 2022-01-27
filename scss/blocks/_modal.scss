@@ -1,14 +1,44 @@
 .modal {
-  background: #0a223d;
-  border-radius: 8px;
-  width: 487px;
-  height: 487px;
-  margin: 100px auto;
+  &__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 143, 223, 0.39);
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
   &__dialog {
-    padding: 18px;
+    color: #fff;
+    position: fixed;
+    padding: 33px 87px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0a223d;
+    border-radius: 8px;
+    z-index: 101;
+    width: 487px;
+    min-height: 487px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s;
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
   }
   &__close-img {
-    margin-left: auto;
+    position: absolute;
+    right: 18px;
+    top: 17px;
   }
   &__title {
     @extend %m700;
@@ -23,16 +53,18 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 302px;
     margin: 0 auto;
   }
   &__input {
     height: 50px;
     padding: 0 18px;
+    border-radius: 4px;
+    width: 100%;
   }
   &__textarea {
     height: 123px;
     padding: 23px 18px;
+    border-radius: 4px;
   }
   &__wrapper {
     display: flex;
@@ -54,5 +86,11 @@
     font-size: 12px;
     line-height: 15px;
     color: #e0e0e0;
+  }
+}
+
+.error {
+  &::placeholder {
+    color: red;
   }
 }
