@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="header-top navbar-top">
         <div class="container">
           <div class="header-top__inner">
@@ -107,7 +107,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </header>
     <nav class="breadcrumb">
       <div class="container">
         <ul class="breadcrumb__list">
@@ -581,11 +581,12 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form class="newsletter-form">
+        <form class="newsletter-form" action="send.php" method="post">
           <input
             class="newsletter-form__input"
             type="text"
             placeholder="Your email address"
+            name="email"
           />
           <button class="newsletter-form__btn" type="submit">
             <span class="newsletter-form__btn-text">Send</span>
@@ -1004,20 +1005,23 @@
               <h3 class="footer-form__title footer__title">
                 Send us a message
               </h3>
-              <form class="footer-form__box">
+              <form class="footer-form__box" action="send.php" method="post">
                 <input
                   class="footer-form__input"
                   type="text"
                   placeholder="Your Full Name*"
+                  name="name"
                 />
                 <input
                   class="footer-form__input"
                   type="tel"
                   placeholder="Phone Number*"
+                  name="phone"
                 />
                 <textarea
                   class="footer-form__textarea"
                   placeholder="Message"
+                  name="message"
                 ></textarea>
                 <button class="footer-form__btn" type="submit">Send</button>
                 <span class="footer-form__note">* Required Fields</span>
@@ -1045,6 +1049,33 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a class="modal__close" href="#">
+          <img
+            class="modal__close-img"
+            src="images/close.svg"
+            alt="close icon"
+          />
+        </a>
+        <h3 class="modal__title">Booking</h3>
+        <form class="modal__form">
+          <input
+            class="modal__input"
+            type="text"
+            placeholder="Your Full Name*"
+          />
+          <input class="modal__input" type="tel" placeholder="Phone Number*" />
+          <input class="modal__input" type="text" placeholder="Email*" />
+          <textarea class="modal__textarea" placeholder="Message"></textarea>
+          <div class="modal__wrapper">
+            <button class="modal__btn">Send</button>
+            <span class="modal__note">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
