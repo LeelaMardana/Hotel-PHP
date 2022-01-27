@@ -35,3 +35,12 @@ body {
   text-transform: uppercase;
   margin-bottom: 70px;
 }
+
+.thankyou {
+  padding: 100px 0;
+  &__text {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+  }
+}

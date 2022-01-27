@@ -1,0 +1,127 @@
+.packages {
+  padding: 40px 0 70px;
+  &-title {
+    margin-bottom: 65px;
+    @extend %m700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &-item {
+    border-radius: 8px 8px 8px 8px;
+    overflow: hidden;
+    height: 500px;
+    background-color: #0a223d;
+    position: relative;
+    &:first-child {
+      display: none;
+    }
+    &--strong {
+      grid-column: 1 / span 2;
+      display: flex;
+      .packages {
+        &-img {
+          max-width: 365px;
+          width: auto;
+          height: 500px;
+          flex-grow: 1;
+        }
+        &-info {
+          flex-grow: 1;
+          max-width: 365px;
+          padding: 46px 21px 30px 44px;
+        }
+        &-offer {
+          padding: 8px 12px;
+          font-size: 12px;
+          line-height: 15px;
+        }
+        &-rating {
+          display: flex;
+          gap: 2px;
+          margin-bottom: 5px;
+        }
+        &-info__title {
+          margin-bottom: 27px;
+        }
+        &-info__text {
+          font-size: 14px;
+          line-height: 160.6%;
+          margin-bottom: 42px;
+        }
+        &-info__box {
+          margin-bottom: 37px;
+        }
+      }
+    }
+  }
+  &-img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+  }
+  &-offer {
+    color: #ffffff;
+    @extend %m600;
+    font-size: 8px;
+    line-height: 10px;
+    padding: 4px 9px;
+    background: #ec1f46;
+    border-radius: 0px 4px 4px 0px;
+    position: absolute;
+    left: 0;
+    top: 26px;
+  }
+  &-info {
+    padding: 30px 21px 25px 32px;
+    color: #fff;
+  }
+  &-info__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 23px;
+  }
+  &-info__box {
+    margin-bottom: 24px;
+  }
+  &-info__wrapper {
+    display: flex;
+    gap: 14px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+  }
+  &-info__oldprice {
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+  }
+  &-info__newprice {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &-info__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-info__btn {
+    @extend %n600;
+    background: #ec1f46;
+    border-radius: 4px;
+    padding: 10px 27px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

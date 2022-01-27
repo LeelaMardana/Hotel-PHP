@@ -1,0 +1,144 @@
+.footer {
+  padding: 108px 0 46px;
+  background: #0a223d;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 160%;
+  &-info {
+    display: flex;
+    margin-bottom: 90px;
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__logo {
+    margin-right: 134px;
+  }
+  &__categories {
+    margin-right: 130px;
+  }
+  &__legal {
+    margin-left: auto;
+  }
+  &-conecntion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 95px;
+  }
+  &__title {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__social {
+    display: flex;
+    gap: 42px;
+  }
+  &__social-title {
+    margin-bottom: 0;
+  }
+  &__social-links {
+    display: flex;
+    gap: 10px;
+  }
+  &-contacts__title {
+    margin-top: 12px;
+    margin-bottom: 25px;
+  }
+  &-contacts__text {
+    margin-bottom: 22px;
+  }
+  &-contacts__item {
+    display: flex;
+    gap: 17px;
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+  &-contacts__icon-wrapper {
+    min-width: 24px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-contacts__link {
+    display: block;
+  }
+  &-form__title {
+    margin-bottom: 34px;
+  }
+  &-form__box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 540px;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+  }
+  &-form__input {
+    width: 100%;
+    max-width: 255px;
+    margin-bottom: 15px;
+    height: 50px;
+    padding: 0 23px;
+    border-radius: 4px;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 15px;
+      color: #bdbdbd;
+    }
+  }
+  &-form__textarea {
+    border-radius: 4px;
+    width: 100%;
+    height: 123px;
+    padding: 18px 23px;
+    margin-bottom: 22px;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 15px;
+      color: #bdbdbd;
+    }
+  }
+  &-form__btn {
+    background: #ec1f46;
+    border-radius: 4px;
+    padding: 18px 65px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+  }
+  &-form__note {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #e0e0e0;
+  }
+  &-bottom {
+    max-width: 700px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 10px;
+  }
+  &-bottom__items {
+    display: flex;
+    gap: 8px;
+  }
+  &-bottom__img {
+    width: 136px;
+    height: 22px;
+  }
+}

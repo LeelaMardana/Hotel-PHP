@@ -169,6 +169,16 @@ body {
   margin-bottom: 70px;
 }
 
+.thankyou {
+  padding: 100px 0;
+}
+
+.thankyou__text {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
 .header {
   background-color: #fff;
 }
@@ -1285,16 +1295,6 @@ body {
 .footer-bottom__img {
   width: 136px;
   height: 22px;
-}
-
-.thankyou {
-  padding: 100px 0;
-}
-
-.thankyou__text {
-  font-size: 18px;
-  line-height: 20px;
-  text-align: center;
 }
 
 .modal {
