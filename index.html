@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -45,7 +46,7 @@
             <a href="#" class="user navbar-top__user--mobile_hidden">
               <img
                 class="user__avatar"
-                src="images/avatar.jfif"
+                src="images/avatar.avif"
                 alt="avatar: Nathan"
               />
               <span class="user__name">Nathan</span>
@@ -65,7 +66,7 @@
               <a href="#" class="user navbar-top__user">
                 <img
                   class="user__avatar"
-                  src="images/avatar.jfif"
+                  src="images/avatar.avif"
                   alt="avatar: Nathan"
                 />
                 <span class="user__name">Nathan</span>
@@ -185,21 +186,21 @@
                   <div class="swiper-slide">
                     <img
                       class="swiper-slide__img"
-                      src="images/slide-1.jpg"
+                      src="images/slide-1.avif"
                       alt="slide"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
                       class="swiper-slide__img"
-                      src="images/slide-2.jpg"
+                      src="images/slide-2.avif"
                       alt="slide"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
                       class="swiper-slide__img"
-                      src="images/slide-3.jpg"
+                      src="images/slide-3.avif"
                       alt="slide"
                     />
                   </div>
@@ -278,7 +279,7 @@
             <div class="packages-item">
               <img
                 class="packages-img"
-                src="images/packages-1.jfif"
+                src="images/packages-1.avif"
                 alt="photo"
               />
               <span class="packages-offer">Flash Offer</span>
@@ -322,7 +323,7 @@
             <div class="packages-item packages-item--strong">
               <img
                 class="packages-img"
-                src="images/packages-1.jfif"
+                src="images/packages-1.avif"
                 alt="photo"
               />
               <span class="packages-offer">Flash Offer</span>
@@ -400,7 +401,7 @@
             <div class="packages-item">
               <img
                 class="packages-img"
-                src="images/packages-2.jfif"
+                src="images/packages-2.avif"
                 alt="photo"
               />
               <span class="packages-offer">Flash Offer</span>
@@ -444,7 +445,7 @@
             <div class="packages-item">
               <img
                 class="packages-img"
-                src="images/packages-3.jfif"
+                src="images/packages-3.avif"
                 alt="photo"
               />
               <span class="packages-offer">Flash Offer</span>
@@ -488,7 +489,7 @@
             <div class="packages-item">
               <img
                 class="packages-img"
-                src="images/packages-4.jfif"
+                src="images/packages-4.avif"
                 alt="photo"
               />
               <span class="packages-offer">Flash Offer</span>
@@ -532,7 +533,7 @@
             <div class="packages-item">
               <img
                 class="packages-img"
-                src="images/packages-5.jfif"
+                src="images/packages-5.avif"
                 alt="photo"
               />
               <span class="packages-offer">Flash Offer</span>
@@ -597,7 +598,12 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="container">
+      <div
+        class="container"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="700"
+      >
         <h2 class="reviews-title title">What people think about&nbsp;us</h2>
         <div class="reviews-wrapper">
           <div class="reviews-slider">
@@ -609,7 +615,7 @@
                   <div class="reviews-slider__profile">
                     <img
                       class="reviews-slider__avatar"
-                      src="images/reviews-avatar.jfif"
+                      src="images/reviews-avatar.avif"
                       alt="user photo"
                     />
                     <h3 class="reviews-slider__username">Megan Fox</h3>
@@ -660,7 +666,7 @@
                   <div class="reviews-slider__profile">
                     <img
                       class="reviews-slider__avatar"
-                      src="images/reviews-avatar-2.jpg"
+                      src="images/reviews-avatar-2.avif"
                       alt="user photo"
                     />
                     <h3 class="reviews-slider__username">Arthur Shelby</h3>
@@ -711,7 +717,7 @@
                   <div class="reviews-slider__profile">
                     <img
                       class="reviews-slider__avatar"
-                      src="images/reviews-avatar-3.jpg"
+                      src="images/reviews-avatar-3.avif"
                       alt="user photo"
                     />
                     <h3 class="reviews-slider__username">Thomas Shelby</h3>
@@ -777,10 +783,15 @@
         <div class="activities-inner">
           <h2 class="activities-title">Other Activities</h2>
           <div class="activities-content">
-            <div class="activities-content__item">
+            <div
+              class="activities-content__item"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="100"
+            >
               <img
                 class="activities-content__img"
-                src="images/activities-1.jfif"
+                src="images/activities-1.avif"
                 alt="img"
               />
               <div class="activities-content__info">
@@ -790,10 +801,15 @@
                 <button class="activities-content__btn">Book Now</button>
               </div>
             </div>
-            <div class="activities-content__item">
+            <div
+              class="activities-content__item"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="300"
+            >
               <img
                 class="activities-content__img"
-                src="images/activities-2.jfif"
+                src="images/activities-2.avif"
                 alt="img"
               />
               <div class="activities-content__info">
@@ -803,10 +819,15 @@
                 <button class="activities-content__btn">Book Now</button>
               </div>
             </div>
-            <div class="activities-content__item">
+            <div
+              class="activities-content__item"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="500"
+            >
               <img
                 class="activities-content__img"
-                src="images/activities-3.jfif"
+                src="images/activities-3.avif"
                 alt="img"
               />
               <div class="activities-content__info">
@@ -816,10 +837,15 @@
                 <button class="activities-content__btn">Book Now</button>
               </div>
             </div>
-            <div class="activities-content__item">
+            <div
+              class="activities-content__item"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="700"
+            >
               <img
                 class="activities-content__img"
-                src="images/activities-4.jfif"
+                src="images/activities-4.avif"
                 alt="img"
               />
               <div class="activities-content__info">
@@ -1110,6 +1136,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
